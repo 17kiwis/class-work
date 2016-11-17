@@ -1,0 +1,59 @@
+
+.parallax{
+  perspective: 100px;
+  height: 600vh;
+  /*vh = vertical hieght, which it's the height of hte window*/
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 100vh 0; 
+  /*adding some padding to the top and bottom and 0 to left and right*/
+}
+
+
+
+
+.base {
+  background: url(../img/sky.png) 50% 50% no-repeat;
+  background-size: cover;
+/*  z-index: 1;*/
+}
+
+.i1 {
+  background: url(../img/littlestar.png) 50% 50% no-repeat;
+  background-size: cover;
+/*  z-index: 2;*/
+}
+
+.i2 {
+  background: url(../img/cloud.png) 50% 50% no-repeat;
+  background-size: cover;
+   transform: translateZ(40px) scale(.1);
+/*   z-index: 20;*/
+}
+
+.i3 {
+  background: url(../img/bigstar.png) 50% 50% no-repeat;
+  background-size: cover;
+  transform: translateZ(-1px) scale(.1);
+
+/*  z-index: 8;*/
+}
+
+.i4 {
+  background: url(../img/planet.png) 50% 50% no-repeat;
+  background-size: cover;
+/*  z-index: 10;*/
+  transform: translateZ(-2px) scale(.1);
+}
+
+p{
+  color: white;
+}
